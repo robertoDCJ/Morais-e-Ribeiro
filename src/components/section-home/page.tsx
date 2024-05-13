@@ -2,7 +2,6 @@ import db from "@/lib/db";
 import ShortenText from "../ShortText/shortText";
 
 interface CardPublicationProps{
-  id: string,
   title: string,
   text: string,
   image: string,
@@ -12,9 +11,9 @@ interface CardPublicationProps{
 
 
 
-const CardPublication = ({id, title, text, image} : CardPublicationProps) => (
+const CardPublication = ({title, text, image} : CardPublicationProps) => (
 
-    <section className="flex justify-around flex-col  gap-4  md:flex-row  m-8">
+    <>
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <img className="rounded-t-lg" src={image} alt="error" />
@@ -32,11 +31,10 @@ const CardPublication = ({id, title, text, image} : CardPublicationProps) => (
         </p>
 
         <a
-          href="#"
+          href="/publicacoes"
           className="inline-flex items-center px-3 py-2 text-sm font-medium
-        text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4
-        focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 
-        dark:focus:ring-blue-800"
+        text-center text-white bg-black rounded-lg hover:opacity-50 focus:ring-4
+        focus:outline-none"
         >
           Link
           <svg
@@ -57,14 +55,14 @@ const CardPublication = ({id, title, text, image} : CardPublicationProps) => (
         </a>
       </div>
     </div>
-  </section>
-
+  </>
   )
 
 
 
 const  SectionHome = async () => {
-  const artigo = await db.post.findMany();
+  const posts = await db.post.findMany();
+  const recentPost = posts.splice(0,3);
   return (
     <main className="grid place-items-center w-full  bg-gray-200">
       <section className="grid place-items-center p-8 ">
@@ -74,16 +72,16 @@ const  SectionHome = async () => {
         >
           Publicações Recentes
         </h1>
-
-        {artigo.map((articulo) => (
+        <section className="flex justify-around flex-col  gap-4 2xl:flex-row m-8">
+        {recentPost.map((post) => (
           <CardPublication
-            key={articulo.id}
-            id={articulo.id}
-            title={articulo.title}
-            text={articulo.text}
-            image={articulo.image}
+            key={post.id}
+            title={post.title}
+            text={post.text}
+            image={post.image}
           />
         ))}
+        </section>
       </section>
     </main>
   );
