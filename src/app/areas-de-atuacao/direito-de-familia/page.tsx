@@ -65,8 +65,8 @@ export default function DireitoDeFamilia() {
               Título VIII (Ordem Social), Capítulo VII (Da Família, da Criança,
               do Adolescente, do Jovem e do Idoso)
             </strong>
-            , estabelece que "a família, base da sociedade, tem especial
-            proteção do Estado" (art. 226).
+            , estabelece que &quot;a família, base da sociedade, tem especial
+            proteção do Estado&quot; (art. 226).
           </p>
           <p className="text-black font-Lato p-4">
             O Direito de Família abrange uma variedade de estruturas familiares,

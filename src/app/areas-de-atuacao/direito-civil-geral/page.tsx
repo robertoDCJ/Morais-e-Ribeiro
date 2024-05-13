@@ -63,8 +63,9 @@ export default function DireitoCivilGeral() {
             O Direito Civil é uma disciplina extensa que regula os direitos e
             deveres nas nossas relações, seja com pessoas ou coisas. Ele inclui
             desde o nascimento até a morte do indivíduo. No dia a dia, quando
-            alguém diz: “tenho um imóvel” ou “sou divorciado”, está fazendo uso
-            de uma faculdade prevista no código civil.
+            alguém diz: &quot;tenho um imóvel&quot; ou &quot;sou
+            divorciado&quot;, está fazendo uso de uma faculdade prevista no
+            código civil.
           </p>
 
           <h2 className="text-2xl font-bold text-black pb-2 ml-5">
