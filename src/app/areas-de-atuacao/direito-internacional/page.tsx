@@ -34,7 +34,7 @@ export default function DireitoInternacional() {
           <p className=" text-black font-Lato p-4">
             O Direito Internacional é um campo que regula as relações entre
             Estados e outras entidades internacionais. Este ramo do direito é
-            essencial para garantir a <strong>ordem</strong> e a{" "}
+            essencial para garantir a <strong>ordem</strong> e a&nbsp;
             <strong>segurança</strong> nas relações globais.
           </p>
           <h1 className="text-xl font-bold text-black pl-4">
@@ -43,9 +43,10 @@ export default function DireitoInternacional() {
           <p className=" text-black font-Lato p-4">
             Embora as primeiras tribos e clãs da antiguidade já apresentassem
             sinais de relações e comércio entre si, a doutrina considera que o
-            início formal do Direito Internacional ocorreu com a assinatura do{" "}
+            início formal do Direito Internacional ocorreu com a assinatura
+            do&nbsp;
             <strong>Tratado de Vestfália</strong>, em <strong>1648</strong>.
-            Este tratado marcou o fim da{" "}
+            Este tratado marcou o fim da&nbsp;
             <strong>Guerra dos Trinta Anos </strong>e declarou a independência
             da <strong>Suíça</strong> e da <strong>Holanda</strong>. A partir de
             então, começaram a surgir os fundamentos do Direito Internacional
@@ -55,11 +56,11 @@ export default function DireitoInternacional() {
             Tipos de Direito Internacional
           </h1>
           <p className=" text-black font-Lato p-4">
-            O Direito Internacional pode ser dividido em{" "}
-            <strong>público</strong> e <strong>privado</strong>. O{" "}
+            O Direito Internacional pode ser dividido em&nbsp;
+            <strong>público</strong> e <strong>privado</strong>. O&nbsp;
             <strong>Direito Internacional Público</strong> trata das normas e
-            leis que regem as negociações entre os países, como os{" "}
-            <strong>pactos</strong> e <strong>tratados</strong>. Já o{" "}
+            leis que regem as negociações entre os países, como os&nbsp;
+            <strong>pactos</strong> e <strong>tratados</strong>. Já o&nbsp;
             <strong>Direito Internacional Privado</strong> é responsável pelo
             conjunto de normas jurídicas, criadas por um Estado, com a
             finalidade de resolver os conflitos de leis no espaço.
@@ -69,9 +70,9 @@ export default function DireitoInternacional() {
           </h1>
           <p className=" text-black font-Lato p-4">
             Existem sete princípios fundamentais que orientam as relações entre
-            países diferentes. Estes incluem a <strong>proibição do uso</strong>{" "}
-            ou <strong>ameaça da força</strong>, a
-            <strong> solução pacífica de controvérsias</strong>, a{" "}
+            países diferentes. Estes incluem a <strong>proibição do uso</strong>
+            &nbsp; ou <strong>ameaça da força</strong>, a
+            <strong> solução pacífica de controvérsias</strong>, a&nbsp;
             <strong>não intervenção nos assuntos internos dos Estados</strong> e
             o <strong>dever de cooperação internacional</strong>.
           </p>
@@ -83,7 +84,7 @@ export default function DireitoInternacional() {
             regem as relações entre os Estados e outras entidades
             internacionais. Essas normas têm como objetivo regular diversos
             aspectos das relações internacionais, como <strong>comércio</strong>
-            , <strong>direitos humanos</strong>,{" "}
+            , <strong>direitos humanos</strong>,&nbsp;
             <strong>conflitos armados</strong>,<strong> meio ambiente</strong>,
             entre outros.
           </p>
@@ -94,7 +95,8 @@ export default function DireitoInternacional() {
             As fontes do Direito Internacional são principalmente tratados e
             costumes internacionais. Os tratados são acordos formais entre os
             Estados que estabelecem obrigações jurídicas. Os costumes
-            internacionais são práticas reiteradas entre os países que se tornam{" "}
+            internacionais são práticas reiteradas entre os países que se
+            tornam&nbsp;
             <strong>normas de conduta</strong>.
           </p>
           <h1 className="text-xl font-bold text-black pl-4">
@@ -103,9 +105,9 @@ export default function DireitoInternacional() {
           <p className="text-black font-Lato p-4 pb-5">
             Com a globalização e a crescente interdependência entre os países, a
             demanda por profissionais com conhecimento em Direito Internacional
-            está aumentando. Eles podem atuar em diversas áreas, como{" "}
+            está aumentando. Eles podem atuar em diversas áreas, como&nbsp;
             <strong>direito dos refugiados</strong>,
-            <strong> direito ambiental internacional</strong>,{" "}
+            <strong> direito ambiental internacional</strong>,&nbsp;
             <strong>direito do comércio internacional</strong>, entre outros.
           </p>
         </div>

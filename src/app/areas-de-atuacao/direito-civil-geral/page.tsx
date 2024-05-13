@@ -44,13 +44,14 @@ export default function DireitoCivilGeral() {
           </h2>
           <p className="text-black font-Lato p-4">
             O Direito Civil é um conjunto de normas que orientam as relações
-            entre os particulares, sejam eles <strong>indivíduos</strong> ou{" "}
+            entre os particulares, sejam eles <strong>indivíduos</strong>&nbsp;
+            ou&nbsp;
             <strong>entidades privadas</strong>. Ele totaliza uma ampla
             variedade de tópicos, incluindo <strong>questões familiares</strong>
-            , <strong>propriedade</strong>,<strong> contratos</strong>,{" "}
-            <strong>obrigações</strong> e{" "}
+            , <strong>propriedade</strong>,<strong> contratos</strong>,&nbsp;
+            <strong>obrigações</strong> e&nbsp;
             <strong>responsabilidades civis</strong>. O objetivo principal do
-            Direito Civil é garantir a <strong>ordem</strong>, a{" "}
+            Direito Civil é garantir a <strong>ordem</strong>, a&nbsp;
             <strong>segurança</strong> e a<strong> justiça</strong> nas
             interações cotidianas.
           </p>
@@ -81,8 +82,8 @@ export default function DireitoCivilGeral() {
           <p className="text-black font-Lato p-4 pb-5">
             O Direito Civil enfrenta desafios constantes para se adaptar às
             mudanças na sociedade e garantir que as leis reflitam as
-            necessidades e os valores atuais. Isso inclui questões como{" "}
-            <strong>direitos digitais</strong>,{" "}
+            necessidades e os valores atuais. Isso inclui questões como&nbsp;
+            <strong>direitos digitais</strong>,&nbsp;
             <strong>privacidade de dados</strong>,
             <strong> direitos dos consumidores</strong>, entre diversos outros.
           </p>

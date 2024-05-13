@@ -50,37 +50,37 @@ export default function DireitoEmpresarial() {
             Também não está relacionado a toda a ordem jurídica do mercado, mas
             apenas à parte dela, que tem a ver com a organização da empresa e
             com a interação entre empresas. Normas que regem as relações de
-            emprego{" "}
+            emprego&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="/areas-de-atuacao/direito-do-trabalho"
             >
               <strong>(Direito do Trabalho) </strong>
             </Link>
-            e de consumo{" "}
+            e de consumo&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="/areas-de-atuacao/direito-do-consumidor"
             >
               <strong>(Direito do Consumidor)</strong>
-            </Link>{" "}
-            estão apartadas do Direito Empresarial.
+            </Link>
+            &nbsp; estão apartadas do Direito Empresarial.
           </p>
           <p className=" text-black font-Lato p-4">
             Ele abrange tópicos como a <strong>constituição de empresas</strong>
             , <strong>fusões e aquisições</strong>,
-            <strong> direitos do consumidor</strong>,{" "}
-            <strong>propriedade intelectual</strong>,{" "}
+            <strong> direitos do consumidor</strong>,&nbsp;
+            <strong>propriedade intelectual</strong>,&nbsp;
             <strong>contratos comerciais</strong>, entre outros. Por meio dele,
-            normatizam-se, por exemplo, <strong>contratos</strong>,{" "}
+            normatizam-se, por exemplo, <strong>contratos</strong>,&nbsp;
             <strong>títulos de crédito</strong> e
-            <strong> propriedade industrial</strong> e{" "}
+            <strong> propriedade industrial</strong> e&nbsp;
             <strong>intelectual</strong>.
           </p>
           <p className="font-light text-black font-Lato p-4">
             A origem do Direito Empresarial remonta à civilização comunal
             italiana, onde o comércio já atingira um estágio mais avançado. É
-            nessa época que se costuma apontar o surgimento das raízes do{" "}
+            nessa época que se costuma apontar o surgimento das raízes do&nbsp;
             <span className="italic">ius mercatorum</span>, ou seja, um regime
             jurídico específico e autônomo, com características, institutos e
             princípios próprios, para a disciplina das relações mercantis.
@@ -90,7 +90,7 @@ export default function DireitoEmpresarial() {
             própria, que destaca a imprescindibilidade da empresa como
             instrumento para o desenvolvimento econômico e social das sociedades
             contemporâneas. Esses princípios próprios do direito empresarial
-            estão listados na{" "}
+            estão listados na&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"

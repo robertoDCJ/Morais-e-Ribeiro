@@ -37,13 +37,13 @@ export default function DireitoPrevidenciario() {
             A previdência social é um sistema que garante a proteção dos
             trabalhadores e seus dependentes nessas situações. Ela faz parte da
             seguridade social, que é um conjunto de políticas públicas que visa
-            assegurar os direitos relativos à<strong> saúde</strong>, à{" "}
-            <strong>assistência social</strong> e à{" "}
+            assegurar os direitos relativos à<strong> saúde</strong>, à&nbsp;
+            <strong>assistência social</strong> e à&nbsp;
             <strong>previdência social</strong>.
           </p>
           <p className="text-black font-Lato p-4">
             A atuação mais nítida e regular do direito previdenciário está na
-            regulamentação do{" "}
+            regulamentação do&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="https://www.gov.br/inss/pt-br"
@@ -71,8 +71,8 @@ export default function DireitoPrevidenciario() {
               className="cursor-pointer hover:text-gray-700"
             >
               <strong> Constituição Federal de 1988 </strong>
-            </Link>{" "}
-            em seu artigo <strong>6º</strong>.
+            </Link>
+            &nbsp; em seu artigo <strong>6º</strong>.
           </p>
           <p className="font-light text-black font-Lato p-4 pb-5">
             Assim como o direito penal e o direito civil possuem princípios

@@ -55,14 +55,14 @@ export default function DireitoDoTrabalho() {
             processual do país.
           </p>
           <p className="text-black font-Lato p-4">
-            É regido principalmente pela{" "}
+            É regido principalmente pela&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm"
             >
               <strong>Consolidação das Leis do Trabalho (CLT)</strong>
-            </Link>{" "}
-            e pela{" "}
+            </Link>
+            &nbsp; e pela&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
@@ -85,9 +85,9 @@ export default function DireitoDoTrabalho() {
             parte hipossuficiente (o trabalhador).
           </p>
           <p className="text-black font-Lato p-4">
-            Também é dividido em diversas áreas, como o{" "}
-            <strong>Direito Individual do Trabalho</strong>, o{" "}
-            <strong>Direito Coletivo do Trabalho</strong> e o{" "}
+            Também é dividido em diversas áreas, como o&nbsp;
+            <strong>Direito Individual do Trabalho</strong>, o&nbsp;
+            <strong>Direito Coletivo do Trabalho</strong> e o&nbsp;
             <strong>Direito Público do Trabalho</strong>. Cada uma dessas áreas
             tem suas próprias especificidades e desafios, tornando o campo do
             Direito do Trabalho um ambiente dinâmico e em constante evolução.

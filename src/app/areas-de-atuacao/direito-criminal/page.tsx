@@ -37,18 +37,19 @@ export default function DireitoCriminal() {
             prejudiciais à sociedade como um todo.
           </p>
           <p className="text-black font-Lato p-4">
-            É dividido em duas partes principais: o{" "}
-            <strong>Direito Penal Substantivo</strong> e o{" "}
+            É dividido em duas partes principais: o&nbsp;
+            <strong>Direito Penal Substantivo</strong> e o&nbsp;
             <strong>Direito Penal Processual</strong>. O direito penal
             substantivo define os crimes e as punições, enquanto o direito penal
             processual estabelece as regras para o julgamento dos crimes
           </p>
           <p className="text-black font-Lato p-4">
-            Os crimes são geralmente categorizados como{" "}
+            Os crimes são geralmente categorizados como&nbsp;
             <strong>delitos </strong>
-            ou <strong>crimes</strong> Os delitos são ofensas menores, como{" "}
+            ou <strong>crimes</strong> Os delitos são ofensas menores,
+            como&nbsp;
             <strong>infrações de trânsito</strong>, enquanto os crimes são
-            ofensas mais graves, como <strong>homicídio</strong> e{" "}
+            ofensas mais graves, como <strong>homicídio</strong> e&nbsp;
             <strong>roubo</strong>.
           </p>
           <p className="text-black font-Lato p-4">
@@ -60,7 +61,7 @@ export default function DireitoCriminal() {
           </p>
           <p className="text-black font-Lato p-4">
             As penas para crimes variam dependendo da gravidade do crime e das
-            circunstâncias do acusado. Elas podem incluir{" "}
+            circunstâncias do acusado. Elas podem incluir&nbsp;
             <strong>multas</strong>, <strong>liberdade condicional</strong>,
             <strong> serviço comunitário</strong>, <strong>prisão</strong> e, em
             alguns casos, a<strong> pena de morte</strong>.

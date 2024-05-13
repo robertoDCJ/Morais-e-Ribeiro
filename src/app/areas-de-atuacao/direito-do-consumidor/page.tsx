@@ -56,25 +56,26 @@ export default function DireitoConsumidor() {
           </p>
 
           <p className="text-black font-Lato p-4">
-            O CDC define o <strong>consumidor</strong> como qualquer pessoa{" "}
+            O CDC define o <strong>consumidor</strong> como qualquer
+            pessoa&nbsp;
             <strong>física</strong>
             ou <strong>jurídica</strong> que adquire ou utiliza produto ou
             serviço como destinatário final. O <strong>fornecedor</strong>, por
             outro lado, é qualquer pessoa física ou jurídica,
-            <strong> pública</strong> ou <strong>privada</strong>,{" "}
+            <strong> pública</strong> ou <strong>privada</strong>,&nbsp;
             <strong>nacional</strong> ou
-            <strong> estrangeira</strong>, além de{" "}
+            <strong> estrangeira</strong>, além de&nbsp;
             <strong>entes despersonalizados</strong>, que desenvolvem atividades
             de produção, <strong>montagem</strong>, <strong>criação</strong>,
-            <strong> construção</strong>, <strong>transformação</strong>,{" "}
-            <strong>importação</strong>,<strong> exportação</strong>,{" "}
+            <strong> construção</strong>, <strong>transformação</strong>,&nbsp;
+            <strong>importação</strong>,<strong> exportação</strong>,&nbsp;
             <strong>distribuição</strong> ou <strong>comercialização </strong>
             de produtos ou prestação de serviços.
           </p>
 
           <p className="text-black font-Lato p-4">
             O objetivo do Direito do Consumidor é prevenir o desrespeito aos
-            direitos nas relações de consumo. A{" "}
+            direitos nas relações de consumo. A&nbsp;
             <Link
               className="cursor-pointer hover:text-gray-700"
               href="https://www.pge.sp.gov.br/centrodeestudos/bibliotecavirtual/dh/volume%20i/
@@ -83,11 +84,11 @@ export default function DireitoConsumidor() {
             >
               <strong> Política Nacional das Relações de Consumo </strong>
             </Link>
-            visa atender às necessidades dos consumidores, respeitar sua{" "}
-            <strong>dignidade</strong>,<strong> saúde</strong> e{" "}
-            <strong>segurança</strong>, proteger seus{" "}
-            <strong>interesses econômicos</strong>, melhorar sua{" "}
-            <strong>qualidade de vida</strong>, bem como promover a{" "}
+            visa atender às necessidades dos consumidores, respeitar sua&nbsp;
+            <strong>dignidade</strong>,<strong> saúde</strong> e&nbsp;
+            <strong>segurança</strong>, proteger seus&nbsp;
+            <strong>interesses econômicos</strong>, melhorar sua&nbsp;
+            <strong>qualidade de vida</strong>, bem como promover a&nbsp;
             <strong>transparência</strong> e<strong> harmonia</strong> nas
             relações de consumo.
           </p>
