@@ -37,7 +37,6 @@ export const FormAddMember = () => {
           setFotoURL("/ImgMembers/Background.svg");
           setImg("");
           reset();
-
         }, 3000);
       } else {
         const data = await response.json();
@@ -47,7 +46,13 @@ export const FormAddMember = () => {
         }, 3000);
       }
     } catch (error) {
-      alert(error);
+      if (error instanceof SyntaxError) {
+        // Manejar errores de sintaxis JSON
+        alert("Error de sintaxis JSON");
+      } else {
+        // Manejar otros errores
+        alert(error);
+      }
     }
   });
 

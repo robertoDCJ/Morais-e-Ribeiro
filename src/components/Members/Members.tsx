@@ -1,7 +1,7 @@
 "use client";
-import { ConfirmationModal } from "../ConfirmatioModal/confirmationModal";
 import { ChangeEvent, useState } from "react";
 import { useForm } from "react-hook-form";
+import { ConfirmationModal } from "../ConfirmatioModal/confirmationModal";
 
 export const Members = ({
   line,
@@ -75,7 +75,13 @@ export const Members = ({
         }, 3000);
       }
     } catch (error) {
-      console.error("Erro ao enviar a requisição:", error);
+      if (error instanceof SyntaxError) {
+        // Manejar errores de sintaxis JSON
+        alert("Error de sintaxis JSON");
+      } else {
+        // Manejar otros errores
+        alert(error);
+      }
     }
   });
 
@@ -104,7 +110,13 @@ export const Members = ({
         }, 3000);
       }
     } catch (error) {
-      console.error("Erro ao enviar a requisição:", error);
+      if (error instanceof SyntaxError) {
+        // Manejar errores de sintaxis JSON
+        alert("Error de sintaxis JSON");
+      } else {
+        // Manejar otros errores
+        alert(error);
+      }
     }
   };
 
@@ -252,13 +264,15 @@ export const Members = ({
               </button>
             </div>
           )}
-          {showModal && 
-          <ConfirmationModal
-          message="¿Você deseja realmente deseja realizar esta ação?"
-          onConfirm={onDelete}
-          onCancel={() => {setShowModal(false)}}
-          />
-          }
+          {showModal && (
+            <ConfirmationModal
+              message="¿Você deseja realmente deseja realizar esta ação?"
+              onConfirm={onDelete}
+              onCancel={() => {
+                setShowModal(false);
+              }}
+            />
+          )}
 
           <h1 className="font-Alegreya font-bold text-2xl border-b-2 mb-5 border-black">
             {name}

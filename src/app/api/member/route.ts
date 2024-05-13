@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import { writeFile, unlink } from "fs/promises";
+import { unlink, writeFile } from "fs/promises";
+import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 
 const prisma = new PrismaClient();
