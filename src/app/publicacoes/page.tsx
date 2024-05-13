@@ -1,5 +1,5 @@
 import { auth } from "@/../auth";
-import { Artigo, Pagination } from "@/components";
+import { Artigo } from "@/components";
 import db from "@/lib/db";
 import Link from "next/link";
 
@@ -60,10 +60,6 @@ export default async function Publicacoes() {
               line={index}
             />
           ))}
-        </div>
-
-        <div className="d-flex justify-center items-center pb-6">
-          <Pagination />
         </div>
       </main>
     </>
