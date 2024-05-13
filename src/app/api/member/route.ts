@@ -21,26 +21,26 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   try {
     const data = await req.formData();
-    const file = data.get("image");
-    if (!file || !(file instanceof File)) {
-      throw new Error("Nenhum arquivo escolhido!");
-    }
-    const bytes = await file.arrayBuffer();
-    const buffer = Buffer.from(bytes);
+    // const file = data.get("image");
+    // if (!file || !(file instanceof File)) {
+    //   throw new Error("Nenhum arquivo escolhido!");
+    // }
+    // const bytes = await file.arrayBuffer();
+    // const buffer = Buffer.from(bytes);
 
-    const filePath = path.join(
-      process.cwd(),
-      "public/uploads",
-      `${file.lastModified.toString()}_${file.name}`
-    );
-    writeFile(filePath, buffer);
+    // const filePath = path.join(
+    //   process.cwd(),
+    //   "public/uploads",
+    //   `${file.lastModified.toString()}_${file.name}`
+    // );
+    // writeFile(filePath, buffer);
     const id = data.get("id");
     const name = data.get("name");
     const profession = data.get("profession");
     const location = data.get("location");
     const email = data.get("email");
     const linkedin = data.get("linkedin");
-    const image = `/uploads/${file.lastModified.toString()}_${file.name}`;
+    // const image = `/uploads/${file.lastModified.toString()}_${file.name}`;
 
     await prisma.member.create({
       data: {
@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
         location: location as string,
         email: email as string,
         linkedin: linkedin as string,
-        image: image as string,
+        // image: image as string,
       },
     });
 

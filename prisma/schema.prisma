@@ -36,7 +36,7 @@ model Member {
   location  String
   email  String
   linkedin  String
-  image  String
+  image  String?
   Post   Post[]
 }
 
