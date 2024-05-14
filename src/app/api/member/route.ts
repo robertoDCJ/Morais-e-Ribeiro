@@ -9,7 +9,7 @@ export async function GET() {
   try {
     const allMembers = await prisma.member.findMany();
 
-    return NextResponse.json(allMembers);
+    return await NextResponse.json(allMembers);
   } catch (error) {
     return NextResponse.json({
       msg: error,
@@ -24,6 +24,11 @@ export async function POST(req: NextRequest) {
     const file = data.get("image");
     if (!file || !(file instanceof File)) {
       throw new Error("Nenhum arquivo escolhido!");
+    }
+    const fileSizeInBytes = file.size;
+    const maxSizeInBytes = 2 * 1024 * 1024; // 2MB
+    if (fileSizeInBytes > maxSizeInBytes) {
+      throw new Error("A imagem excede o tamanho máximo permitido de 2MB.");
     }
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
