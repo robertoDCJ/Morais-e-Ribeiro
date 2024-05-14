@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useForm } from "react-hook-form";
 import { ConfirmationModal } from "../ConfirmatioModal/confirmationModal";
 
@@ -25,7 +25,7 @@ export const Members = ({
   session: string | undefined;
 }) => {
   const [showModal, setShowModal] = useState(false);
-  // const [img, setImg] = useState<string | File>(image);
+  const [img, setImg] = useState<string | File>(image);
   const [message, setMessage] = useState<string | null>("");
   const [handdleEditar, setHanddleEditar] = useState<boolean>(false);
   const [fotoURL, setFotoURL] = useState<string | null>(
@@ -39,7 +39,7 @@ export const Members = ({
       location: location,
       email: email,
       linkedin: linkedin,
-      // image: image,
+      image: image,
     },
   });
 
@@ -52,8 +52,8 @@ export const Members = ({
     form.append("location", data.location);
     form.append("email", data.email);
     form.append("linkedin", data.linkedin);
-    // form.append("image", img);
-    // form.append("lastImage", image);
+    form.append("image", img);
+    form.append("lastImage", image);
 
     try {
       const response = await fetch("/api/member", {
@@ -120,15 +120,15 @@ export const Members = ({
     }
   };
 
-  //Render and conversion seleted image
-  // const handleSelectedImage = (event: ChangeEvent<HTMLInputElement>) => {
-  //   const files = event.currentTarget.files;
-  //   if (files && files.length > 0) {
-  //     const imageSelected = files[0];
-  //     setImg(imageSelected);
-  //     setFotoURL(URL.createObjectURL(imageSelected));
-  //   }
-  // };
+  // Render and conversion seleted image
+  const handleSelectedImage = (event: ChangeEvent<HTMLInputElement>) => {
+    const files = event.currentTarget.files;
+    if (files && files.length > 0) {
+      const imageSelected = files[0];
+      setImg(imageSelected);
+      setFotoURL(URL.createObjectURL(imageSelected));
+    }
+  };
 
   return (
     <div className="relative w-full  grid place-items-center max-w-screen-xl p-4">
@@ -197,13 +197,13 @@ export const Members = ({
                 placeholder="LinkedIn"
               />
               <label htmlFor="image">Foto</label>
-              {/* <input
+              <input
                 className="text-gray-500"
                 id="image"
                 type="file"
                 accept="image/*"
                 onChange={handleSelectedImage}
-              /> */}
+              />
               <div className="grid grid-cols-2 place-items-center  pt-4">
                 <button
                   className="bg-black rounded-md  text-white font-Alegreya w-24  py-1  transition-all duration-500 hover:-translate-y-2"
