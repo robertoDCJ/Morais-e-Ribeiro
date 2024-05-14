@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     const buffer = Buffer.from(bytes);
 
     const filePath = path.join(
-      process.cwd(),
+      // process.cwd(),
       "public/uploads",
       `${file.lastModified.toString()}_${file.name}`
     );
