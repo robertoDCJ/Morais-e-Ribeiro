@@ -11,7 +11,7 @@ export async function GET() {
 
     return await NextResponse.json(allMembers);
   } catch (error) {
-    return NextResponse.json({
+    return await NextResponse.json({
       msg: error,
       status: 500,
       error: error,
@@ -21,7 +21,7 @@ export async function GET() {
 export async function POST(req: NextRequest) {
   try {
     const data = await req.formData();
-    const file = data.get("image");
+    const file = await data.get("image");
     if (!file || !(file instanceof File)) {
       throw new Error("Nenhum arquivo escolhido!");
     }
@@ -31,11 +31,11 @@ export async function POST(req: NextRequest) {
       throw new Error("A imagem excede o tamanho máximo permitido de 2MB.");
     }
     const bytes = await file.arrayBuffer();
-    const buffer = Buffer.from(bytes);
+    const buffer = await Buffer.from(bytes);
 
-    const filePath = path.join(
-      // process.cwd(),
-      "https://morais-e-ribeiro-6yqt-mydw4l19v-roberto-cs-projects.vercel.app/public/uploads",
+    const filePath = await path.join(
+      await process.cwd(),
+      "public/uploads",
       `${file.lastModified.toString()}_${file.name}`
     );
     writeFile(filePath, buffer);
@@ -58,9 +58,12 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    return NextResponse.json({ msg: "Membro adicionado com sucesso!", id: id });
+    return await NextResponse.json({
+      msg: "Membro adicionado com sucesso!",
+      id: id,
+    });
   } catch (error: any) {
-    return NextResponse.json(
+    return await NextResponse.json(
       {
         msg: "Erro ao adicionar o membro",
         error: error.message,
@@ -91,13 +94,13 @@ export async function PUT(req: NextRequest) {
 
     if (image !== lastImage) {
       const bytes = await file.arrayBuffer();
-      const buffer = Buffer.from(bytes);
-      const filePath = path.join(
-        process.cwd(),
+      const buffer = await Buffer.from(bytes);
+      const filePath = await path.join(
+        await process.cwd(),
         "public/uploads",
         `${file.lastModified.toString()}_${file.name}`
       );
-      writeFile(filePath, buffer);
+      await writeFile(filePath, buffer);
 
       await unlink(`public${lastImage}`);
     }
@@ -113,9 +116,12 @@ export async function PUT(req: NextRequest) {
       },
     });
 
-    return NextResponse.json({ msg: "Membro atualizado com sucesso!", id: id });
+    return await NextResponse.json({
+      msg: "Membro atualizado com sucesso!",
+      id: id,
+    });
   } catch (error: any) {
-    return NextResponse.json(
+    return await NextResponse.json(
       {
         msg: "Erro ao atualizar o membro",
         error: error.message,
