@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 
     const filePath = path.join(
       // process.cwd(),
-      "public/uploads",
+      "https://morais-e-ribeiro-6yqt-mydw4l19v-roberto-cs-projects.vercel.app/public/uploads",
       `${file.lastModified.toString()}_${file.name}`
     );
     writeFile(filePath, buffer);
